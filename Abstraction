@@ -1,0 +1,66 @@
+
+/*
+Abstaction
+
+*/ 
+
+abstract class Test {
+
+    abstract void pen(); 
+ 
+}
+ class School extends Test{
+
+    void pen(){
+        System.out.println("Write with pen");
+    }
+    public static void main(String[] args) {
+        School t1= new School();
+        t1.pen();
+        
+    }
+ }
+ 
+ class kg extends Test{
+  void pen(){
+      System.out.println("Write with as");
+      
+      }
+      public static void main(String[] a) {
+          kg k1= new kg();
+          k1.pen();
+          
+      }
+  
+
+ }
+
+//  Interface
+
+interface I1 {
+  int i=0;
+    void show();
+}
+ 
+interface I2{
+int j=1;
+void display();
+
+ }
+class test implements I1, I2{
+public void show(){
+    System.out.println(" Start showing");
+}
+public void display(){
+System.out.println(" Start opening");
+
+}
+public static void main(String[] args) {
+    test t1= new test();
+    t1.show();
+     System.out.println(i);
+    t1.display();
+    System.out.println(j);
+
+}
+}
