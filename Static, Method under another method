@@ -1,0 +1,29 @@
+class neww{
+static int a;
+    static{
+a = 10;
+System.out.println(a);
+    }
+    static void pen()// class method
+    {
+         System.out.println("11");
+    }
+public static void main(String[] args) {
+    neww.pen();
+    neww n2= new neww();
+    System.out.println(n2.add(10, 20)); 
+}
+static {
+    a=20;
+    System.out.println(a);
+}
+int add(int b, int c){
+// {   int b,c;
+    dog();
+
+    return b+c;
+}
+void dog(){
+    System.out.println("into dog");
+}
+}
